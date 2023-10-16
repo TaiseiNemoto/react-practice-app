@@ -1,17 +1,15 @@
 'use client';
 
-import { useState } from 'react';
+type SquareType = {
+  value: 'X' | 'O' | null;
+  onSquareClick: () => void;
+};
 
-export default function Square() {
-  const [value, setValue] = useState<string | null>(null);
-  function handleClick() {
-    setValue('X');
-  }
-
+export default function Square({ value, onSquareClick }: SquareType) {
   return (
     <button
       className="border-2 text-2xl w-9 h-9 mt-[-2px] mr-[-2px] font-bold"
-      onClick={handleClick}
+      onClick={onSquareClick}
     >
       {value}
     </button>
