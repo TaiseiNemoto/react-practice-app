@@ -1,14 +1,16 @@
 'use client';
 
-import { useState } from 'react';
 import Square from './Square';
 
 type SquareType = 'X' | 'O' | null;
 
-export default function Board() {
-  const [xIsNext, setXIsNext] = useState<boolean>(true);
-  const [squares, setSquares] = useState<SquareType[]>(Array(9).fill(null));
+type BoardProps = {
+  xIsNext: boolean;
+  squares: SquareType[];
+  onPlay: (nextSquares: SquareType[]) => void;
+};
 
+export default function Board({ xIsNext, squares, onPlay }: BoardProps) {
   const winner = calculateWinner(squares);
 
   let status;
@@ -29,36 +31,7 @@ export default function Board() {
     } else {
       nextSquares[i] = 'O';
     }
-    setSquares(nextSquares);
-    setXIsNext(!xIsNext);
-  }
-
-  function calculateWinner(squares: SquareType[]) {
-    const lines = [
-      [0, 1, 2],
-      [3, 4, 5],
-      [6, 7, 8],
-      [0, 3, 6],
-      [1, 4, 7],
-      [2, 5, 8],
-      [0, 4, 8],
-      [2, 4, 6],
-    ];
-    let result = null;
-
-    lines.forEach((v, i) => {
-      const [a, b, c] = lines[i];
-
-      if (
-        squares[a] &&
-        squares[a] === squares[b] &&
-        squares[a] === squares[c]
-      ) {
-        result = squares[a];
-      }
-    });
-
-    return result;
+    onPlay(nextSquares);
   }
 
   return (
@@ -81,4 +54,28 @@ export default function Board() {
       </div>
     </>
   );
+}
+
+function calculateWinner(squares: SquareType[]) {
+  const lines = [
+    [0, 1, 2],
+    [3, 4, 5],
+    [6, 7, 8],
+    [0, 3, 6],
+    [1, 4, 7],
+    [2, 5, 8],
+    [0, 4, 8],
+    [2, 4, 6],
+  ];
+  let result = null;
+
+  lines.forEach((v, i) => {
+    const [a, b, c] = lines[i];
+
+    if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
+      result = squares[a];
+    }
+  });
+
+  return result;
 }

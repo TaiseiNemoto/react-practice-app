@@ -1,4 +1,4 @@
-import Board from '@/components/tic-tac-toe/Board';
+import Game from '@/components/tic-tac-toe/Game';
 import Link from 'next/link';
 
 export default function page() {
@@ -6,7 +6,7 @@ export default function page() {
     <main>
       <h1>tic-tac-toe</h1>
       <Link href="/">To top</Link>
-      <Board />
+      <Game />
     </main>
   );
 }
