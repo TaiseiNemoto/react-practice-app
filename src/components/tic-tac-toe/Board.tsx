@@ -1,8 +1,7 @@
 'use client';
 
+import { SquareType } from '@/app/tic-tac-toe/type';
 import Square from './Square';
-
-type SquareType = 'X' | 'O' | null;
 
 type BoardProps = {
   xIsNext: boolean;
