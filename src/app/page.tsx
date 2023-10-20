@@ -1,10 +1,15 @@
-import Link from 'next/link';
+import H1Element from '@/components/common/H1Element';
+import PageLink from '@/components/common/PageLink';
 
 export default function Home() {
   return (
     <main>
-      <h1>top page</h1>
-      <Link href="/tic-tac-toe">To tic-tac-toe</Link>
+      <H1Element title="Top Page" />
+      <PageLink link="/tic-tac-toe" pageName="Tic Tac Toe" />
+      <PageLink
+        link="/state-a-components-memory"
+        pageName="State: A Component's Memory"
+      />
     </main>
   );
 }

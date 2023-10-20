@@ -4,6 +4,7 @@ import { useState } from 'react';
 
 import Board from './Board';
 import { SquareType } from '@/app/tic-tac-toe/type';
+import Button from '../common/Button';
 
 export default function Game() {
   const [history, setHistory] = useState<SquareType[][]>([Array(9).fill(null)]);
@@ -31,7 +32,7 @@ export default function Game() {
 
     return (
       <li key={move}>
-        <button onClick={() => jumpTo(move)}>{description}</button>
+        <Button handleClick={() => jumpTo(move)} buttonText={description} />
       </li>
     );
   });
