@@ -13,6 +13,10 @@ export default function page() {
         link="/state-a-components-memory/fix-stuck-form-inputs"
         pageName="Fix stuck form inputs"
       />
+      <PageLink
+        link="/state-a-components-memory/fix-a-crash"
+        pageName="Fix a crash"
+      />
     </main>
   );
 }
