@@ -20,9 +20,9 @@ export default function PageLink({ link, pageName }: PageLinkProps) {
           d="M0 0L3 3L0 6"
           fill="none"
           stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         ></path>
       </svg>
     </Link>

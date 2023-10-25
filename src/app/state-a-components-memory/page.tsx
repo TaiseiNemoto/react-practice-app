@@ -9,6 +9,10 @@ export default function page() {
         link="/state-a-components-memory/complete-the-gallery"
         pageName="Complete the gallery"
       />
+      <PageLink
+        link="/state-a-components-memory/fix-stuck-form-inputs"
+        pageName="Fix stuck form inputs"
+      />
     </main>
   );
 }
