@@ -17,6 +17,10 @@ export default function page() {
         link="/state-a-components-memory/fix-a-crash"
         pageName="Fix a crash"
       />
+      <PageLink
+        link="/state-a-components-memory/remove-unnecessary-state"
+        pageName="Remove unnecessary state"
+      />
     </main>
   );
 }
