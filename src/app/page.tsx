@@ -11,6 +11,10 @@ export default function Home() {
         pageName="State: A Component's Memory"
       />
       <PageLink link="/state-as-a-snapshot" pageName="State as a Snapshot" />
+      <PageLink
+        link="/queueing-a-series-of-state-updates"
+        pageName="Queueing a Series of State Updates"
+      />
     </main>
   );
 }
