@@ -10,6 +10,7 @@ export default function Home() {
         link="/state-a-components-memory"
         pageName="State: A Component's Memory"
       />
+      <PageLink link="/state-as-a-snapshot" pageName="State as a Snapshot" />
     </main>
   );
 }
