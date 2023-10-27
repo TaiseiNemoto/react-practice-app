@@ -9,6 +9,10 @@ export default function page() {
         pageName="Fix a request counter"
         link="/queueing-a-series-of-state-updates/fix-a-request-counter"
       />
+      <PageLink
+        pageName="Implement the state queue yourself"
+        link="/queueing-a-series-of-state-updates/implement-the-state-queue-yourself"
+      />
     </main>
   );
 }
