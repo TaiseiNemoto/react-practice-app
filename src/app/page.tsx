@@ -15,6 +15,10 @@ export default function Home() {
         link="/queueing-a-series-of-state-updates"
         pageName="Queueing a Series of State Updates"
       />
+      <PageLink
+        link="/updating-objects-in-state"
+        pageName="Updating Objects in State"
+      />
     </main>
   );
 }
