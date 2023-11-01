@@ -9,6 +9,10 @@ export default function page() {
         pageName="Fix incorrect state updates"
         link="/updating-objects-in-state/fix-incorrect-state-updates"
       />
+      <PageLink
+        pageName="Find and fix the mutation"
+        link="/updating-objects-in-state/find-and-fix-the-mutation"
+      />
     </main>
   );
 }
