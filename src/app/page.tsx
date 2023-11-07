@@ -19,6 +19,10 @@ export default function Home() {
         link="/updating-objects-in-state"
         pageName="Updating Objects in State"
       />
+      <PageLink
+        link="/updating-arrays-in-state"
+        pageName="Updating Arrays in State"
+      />
     </main>
   );
 }
