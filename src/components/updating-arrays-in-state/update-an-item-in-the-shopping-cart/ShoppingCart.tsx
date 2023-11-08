@@ -36,17 +36,41 @@ export default function ShoppingCart() {
     );
   }
 
+  function handleDecreaseClick(productId: number) {
+    setProducts(
+      products
+        .map((product) => {
+          if (productId !== product.id) return product;
+          else
+            return {
+              ...product,
+              count: product.count - 1,
+            };
+        })
+        .filter((product) => product.count > 0),
+    );
+  }
+
   return (
     <ul>
       {products.map((product) => (
         <li key={product.id}>
           {product.name} (<b>{product.count}</b>)
           <button
+            className="h-10 px-6 font-semibold rounded-md border border-slate-200 text-slate-900"
             onClick={() => {
               handleIncreaseClick(product.id);
             }}
           >
             +
+          </button>
+          <button
+            className="h-10 px-6 font-semibold rounded-md border border-slate-200 text-slate-900"
+            onClick={() => {
+              handleDecreaseClick(product.id);
+            }}
+          >
+            –
           </button>
         </li>
       ))}
