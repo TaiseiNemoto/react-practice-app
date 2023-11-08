@@ -9,6 +9,10 @@ export default function page() {
         pageName="Fix incorrect state updates"
         link="/updating-arrays-in-state/update-an-item-in-the-shopping-cart"
       />
+      <PageLink
+        pageName="Fix the mutations using non-mutative methods"
+        link="/updating-arrays-in-state/fix-the-mutations-using-non-mutative-methods"
+      />
     </main>
   );
 }
