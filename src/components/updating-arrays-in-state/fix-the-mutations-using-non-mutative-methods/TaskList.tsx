@@ -1,7 +1,29 @@
 import Button from '@/components/common/Button';
 import { useState } from 'react';
 
-export default function TaskList({ todos, onChangeTodo, onDeleteTodo }) {
+type TodoType = {
+  id: number;
+  title: string;
+  done: boolean;
+};
+
+type TaskListProps = {
+  todos: TodoType[];
+  onChangeTodo: (arg: TodoType) => void;
+  onDeleteTodo: (arg: number) => void;
+};
+
+type TaskProps = {
+  todo: TodoType;
+  onChange: (arg: TodoType) => void;
+  onDelete: (arg: number) => void;
+};
+
+export default function TaskList({
+  todos,
+  onChangeTodo,
+  onDeleteTodo,
+}: TaskListProps) {
   return (
     <ul>
       {todos.map((todo) => (
@@ -13,7 +35,7 @@ export default function TaskList({ todos, onChangeTodo, onDeleteTodo }) {
   );
 }
 
-function Task({ todo, onChange, onDelete }) {
+function Task({ todo, onChange, onDelete }: TaskProps) {
   const [isEditing, setIsEditing] = useState(false);
   let todoContent;
 
