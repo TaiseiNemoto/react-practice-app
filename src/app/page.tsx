@@ -23,6 +23,10 @@ export default function Home() {
         link="/updating-arrays-in-state"
         pageName="Updating Arrays in State"
       />
+      <PageLink
+        link="/reacting-to-input-with-state"
+        pageName="Reacting to Input with State"
+      />
     </main>
   );
 }
