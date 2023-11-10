@@ -6,20 +6,23 @@ import { useState } from 'react';
 export default function Picture() {
   const [isActive, setIsActive] = useState(false);
 
-  function handleOnClick() {
-    setIsActive(!isActive);
-    console.log(isActive);
-  }
+  const backgroundClassName = isActive
+    ? 'background background--active'
+    : 'background';
+  const pictureClassName = isActive ? 'picture picture--active' : 'picture';
 
   return (
-    <div className="background background--active">
+    <div className={backgroundClassName} onClick={() => setIsActive(false)}>
       <Image
-        className="picture"
+        className={pictureClassName}
         alt="Rainbow houses in Kampung Pelangi, Indonesia"
         src="https://i.imgur.com/5qwVYb1.jpeg"
         width={399}
         height={372}
-        onClick={handleOnClick}
+        onClick={(e) => {
+          e.stopPropagation();
+          setIsActive(true);
+        }}
       />
     </div>
   );
