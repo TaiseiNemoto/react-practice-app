@@ -9,10 +9,10 @@ export default function page() {
         pageName="Add and remove a CSS class"
         link="/reacting-to-input-with-state/add-and-remove-a-css-class"
       />
-      {/* <PageLink
-        pageName="Fix the mutations using non-mutative methods"
-        link="/updating-arrays-in-state/fix-the-mutations-using-non-mutative-methods"
-      /> */}
+      <PageLink
+        pageName="Profile editor"
+        link="/reacting-to-input-with-state/profile-editor"
+      />
     </main>
   );
 }
