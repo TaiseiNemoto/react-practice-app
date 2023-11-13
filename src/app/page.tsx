@@ -27,6 +27,10 @@ export default function Home() {
         link="/reacting-to-input-with-state"
         pageName="Reacting to Input with State"
       />
+      <PageLink
+        link="/choosing-the-state-structure"
+        pageName="Choosing the State Structure"
+      />
     </main>
   );
 }
