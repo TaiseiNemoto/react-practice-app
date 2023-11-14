@@ -9,10 +9,10 @@ export default function page() {
         pageName="Fix a broken packing list"
         link="/choosing-the-state-structure/fix-a-broken-packing-list"
       />
-      {/* <PageLink
-        pageName="Find and fix the mutation"
-        link="/updating-objects-in-state/find-and-fix-the-mutation"
-      /> */}
+      <PageLink
+        pageName="Fix the disappearing selection "
+        link="/choosing-the-state-structure/fix-the-disappearing-selection"
+      />
     </main>
   );
 }
