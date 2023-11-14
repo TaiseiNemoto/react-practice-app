@@ -10,8 +10,12 @@ export default function page() {
         link="/choosing-the-state-structure/fix-a-broken-packing-list"
       />
       <PageLink
-        pageName="Fix the disappearing selection "
+        pageName="Fix the disappearing selection"
         link="/choosing-the-state-structure/fix-the-disappearing-selection"
+      />
+      <PageLink
+        pageName="Implement multiple selection"
+        link="/choosing-the-state-structure/implement-multiple-selection"
       />
     </main>
   );
