@@ -12,7 +12,7 @@ type LetterProps = {
 
 export default function Letter({ letter, onToggle, isSelected }: LetterProps) {
   return (
-    <li className={isSelected ? 'selected' : ''}>
+    <li className={isSelected ? 'bg-emerald-50' : ''}>
       <label>
         <input
           type="checkbox"

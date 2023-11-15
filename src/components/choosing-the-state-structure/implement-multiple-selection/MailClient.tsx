@@ -5,12 +5,14 @@ import { useState } from 'react';
 import Letter from './Letter';
 
 export default function MailClient() {
-  const [selectedId, setSelectedId] = useState<number | null>(null);
-
-  const selectedCount = 1;
+  const [selectedIds, setSelectedIds] = useState<number[]>([]);
 
   function handleToggle(toggleId: number) {
-    setSelectedId(toggleId);
+    if (selectedIds.includes(toggleId)) {
+      setSelectedIds(selectedIds.filter((id) => id !== toggleId));
+    } else {
+      setSelectedIds([...selectedIds, toggleId]);
+    }
   }
 
   return (
@@ -21,13 +23,13 @@ export default function MailClient() {
           <Letter
             key={letter.id}
             letter={letter}
-            isSelected={letter.id === selectedId}
+            isSelected={selectedIds.includes(letter.id)}
             onToggle={handleToggle}
           />
         ))}
         <hr />
         <p>
-          <b>You selected {selectedCount} letters</b>
+          <b>You selected {selectedIds.length} letters</b>
         </p>
       </ul>
     </>
