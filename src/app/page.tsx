@@ -31,6 +31,10 @@ export default function Home() {
         link="/choosing-the-state-structure"
         pageName="Choosing the State Structure"
       />
+      <PageLink
+        link="/sharing-state-between-components"
+        pageName="Sharing State Between Components"
+      />
     </main>
   );
 }
