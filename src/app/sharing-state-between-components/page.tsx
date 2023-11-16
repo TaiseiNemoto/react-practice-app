@@ -9,10 +9,10 @@ export default function page() {
         link="/sharing-state-between-components/synced-inputs"
         pageName="Synced inputs"
       />
-      {/* <PageLink
-        link="/sharing-state-between-components/fix-stuck-form-inputs"
-        pageName="Fix stuck form inputs"
-      /> */}
+      <PageLink
+        link="/sharing-state-between-components/filtering-a-list"
+        pageName="Filtering a list"
+      />
     </main>
   );
 }
