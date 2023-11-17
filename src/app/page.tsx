@@ -35,6 +35,10 @@ export default function Home() {
         link="/sharing-state-between-components"
         pageName="Sharing State Between Components"
       />
+      <PageLink
+        link="/preserving-and-resetting-state"
+        pageName="Preserving and Resetting State"
+      />
     </main>
   );
 }
