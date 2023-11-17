@@ -9,10 +9,10 @@ export default function page() {
         pageName="Fix disappearing input text"
         link="/preserving-and-resetting-state/fix-disappearing-input-text"
       />
-      {/* <PageLink
-        pageName="Fix the disappearing selection"
-        link="/preserving-and-resetting-state/fix-the-disappearing-selection"
-      /> */}
+      <PageLink
+        pageName="Swap two form field"
+        link="/preserving-and-resetting-state/swap-two-form-fields"
+      />
       {/* <PageLink
         pageName="Implement multiple selection"
         link="/preserving-and-resetting-state/implement-multiple-selection"
