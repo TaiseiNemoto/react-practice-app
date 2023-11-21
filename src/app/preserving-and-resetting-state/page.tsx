@@ -13,10 +13,10 @@ export default function page() {
         pageName="Swap two form field"
         link="/preserving-and-resetting-state/swap-two-form-fields"
       />
-      {/* <PageLink
-        pageName="Implement multiple selection"
-        link="/preserving-and-resetting-state/implement-multiple-selection"
-      /> */}
+      <PageLink
+        pageName="Reset a detail form"
+        link="/preserving-and-resetting-state/reset-a-detail-form"
+      />
     </main>
   );
 }
