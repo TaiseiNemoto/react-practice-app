@@ -21,6 +21,10 @@ export default function page() {
         pageName="Clear an image while it’s loading"
         link="/preserving-and-resetting-state/clear-an-image-while-its-loading"
       />
+      <PageLink
+        pageName="Fix misplaced state in the list"
+        link="/preserving-and-resetting-state/fix-misplaced-state-in-the-list"
+      />
     </main>
   );
 }
