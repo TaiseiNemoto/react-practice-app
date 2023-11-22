@@ -17,6 +17,10 @@ export default function page() {
         pageName="Reset a detail form"
         link="/preserving-and-resetting-state/reset-a-detail-form"
       />
+      <PageLink
+        pageName="Clear an image while it’s loading"
+        link="/preserving-and-resetting-state/clear-an-image-while-its-loading"
+      />
     </main>
   );
 }
