@@ -39,6 +39,10 @@ export default function Home() {
         link="/preserving-and-resetting-state"
         pageName="Preserving and Resetting State"
       />
+      <PageLink
+        link="/extracting-state-logic-into-a-reducer"
+        pageName="Extracting State Logic into a Reducer"
+      />
     </main>
   );
 }
