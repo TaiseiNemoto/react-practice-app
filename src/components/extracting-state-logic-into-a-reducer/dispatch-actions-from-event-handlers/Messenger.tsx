@@ -8,6 +8,12 @@ import { useReducer } from 'react';
 import ContactList from './ContactList';
 import Chat from './Chat';
 
+export type Contact = {
+  id: number;
+  name: string;
+  email: string;
+};
+
 export default function Messenger() {
   const [state, dispatch] = useReducer(messengerReducer, initialState);
   const message = state.message;
@@ -23,7 +29,7 @@ export default function Messenger() {
       <Chat
         key={contact!.id}
         message={message}
-        contact={contact}
+        contact={contact!}
         dispatch={dispatch}
       />
     </div>

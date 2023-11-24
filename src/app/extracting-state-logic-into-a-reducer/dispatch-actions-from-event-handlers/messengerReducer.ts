@@ -3,7 +3,27 @@ export const initialState = {
   message: 'Hello',
 };
 
-export function messengerReducer(state, action) {
+type State = {
+  selectedId: number;
+  message: string;
+};
+
+type Action =
+  | {
+      type: 'changed_selection';
+      contactId: number;
+    }
+  | {
+      type: 'edited_message';
+      message: string;
+    }
+  | {
+      type: string;
+      contactId: number;
+      message: string;
+    };
+
+export function messengerReducer(state: State, action: Action) {
   switch (action.type) {
     case 'changed_selection': {
       return {
