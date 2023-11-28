@@ -1,9 +1,18 @@
 import { Contact } from './Messenger';
 
+type DispatchArg =
+  | {
+      type: 'edited_message';
+      message: string;
+    }
+  | {
+      type: 'sent_message';
+    };
+
 type ChatProps = {
   contact: Contact;
   message: string;
-  dispatch: (arg: { type: 'edited_message'; message: string }) => void;
+  dispatch: (arg: DispatchArg) => void;
 };
 
 export default function Chat({ contact, message, dispatch }: ChatProps) {
@@ -20,7 +29,16 @@ export default function Chat({ contact, message, dispatch }: ChatProps) {
         }}
       />
       <br />
-      <button>Send to {contact.email}</button>
+      <button
+        onClick={() => {
+          alert(`Sending "${message}" to ${contact.email}`);
+          dispatch({
+            type: 'sent_message',
+          });
+        }}
+      >
+        Send to {contact.email}
+      </button>
     </section>
   );
 }

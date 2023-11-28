@@ -18,6 +18,9 @@ type Action =
       message: string;
     }
   | {
+      type: 'sent_message';
+    }
+  | {
       type: string;
       contactId: number;
       message: string;
@@ -36,6 +39,12 @@ export function messengerReducer(state: State, action: Action) {
       return {
         ...state,
         message: action.message,
+      };
+    }
+    case 'sent_message': {
+      return {
+        ...state,
+        message: '',
       };
     }
     default: {
