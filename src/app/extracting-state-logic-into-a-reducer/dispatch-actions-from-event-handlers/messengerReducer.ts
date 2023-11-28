@@ -1,11 +1,19 @@
 export const initialState = {
   selectedId: 0,
-  message: 'Hello',
+  messages: {
+    0: 'Hello Taylor',
+    1: 'Hello Alice',
+    2: 'Hello Bob',
+  },
+};
+
+type Messages = {
+  [key: number]: string;
 };
 
 type State = {
   selectedId: number;
-  message: string;
+  messages: Messages;
 };
 
 type Action =
@@ -38,7 +46,10 @@ export function messengerReducer(state: State, action: Action) {
     case 'edited_message': {
       return {
         ...state,
-        message: action.message,
+        messages: {
+          ...state.messages,
+          [state.selectedId]: action.message,
+        },
       };
     }
     case 'sent_message': {

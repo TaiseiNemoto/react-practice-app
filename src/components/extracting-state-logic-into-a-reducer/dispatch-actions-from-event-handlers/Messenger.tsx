@@ -16,7 +16,7 @@ export type Contact = {
 
 export default function Messenger() {
   const [state, dispatch] = useReducer(messengerReducer, initialState);
-  const message = state.message;
+  const messages = state.messages;
   const contact = contacts.find((c) => c.id === state.selectedId);
 
   return (
@@ -28,7 +28,7 @@ export default function Messenger() {
       />
       <Chat
         key={contact!.id}
-        message={message}
+        message={messages[contact!.id]}
         contact={contact!}
         dispatch={dispatch}
       />
