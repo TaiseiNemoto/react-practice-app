@@ -43,6 +43,10 @@ export default function Home() {
         link="/extracting-state-logic-into-a-reducer"
         pageName="Extracting State Logic into a Reducer"
       />
+      <PageLink
+        link="/passing-data-deeply-with-context"
+        pageName="Passing Data Deeply with Context"
+      />
     </main>
   );
 }
