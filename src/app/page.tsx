@@ -47,6 +47,10 @@ export default function Home() {
         link="/passing-data-deeply-with-context"
         pageName="Passing Data Deeply with Context"
       />
+      <PageLink
+        link="/referencing-values-with-refs"
+        pageName="Referencing Values with Refs"
+      />
     </main>
   );
 }
