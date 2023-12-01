@@ -13,6 +13,10 @@ export default function page() {
         link="/referencing-values-with-refs/fix-debouncing"
         pageName="Fix debouncing"
       />
+      <PageLink
+        link="/referencing-values-with-refs/read-the-latest-state"
+        pageName="Read the latest state"
+      />
     </main>
   );
 }
