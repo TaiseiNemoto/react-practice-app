@@ -9,10 +9,10 @@ export default function page() {
         link="/referencing-values-with-refs/fix-a-broken-chat-input"
         pageName="Fix a broken chat input"
       />
-      {/* <PageLink
-        link="/referencing-values-with-refs/filtering-a-list"
-        pageName="Filtering a list"
-      /> */}
+      <PageLink
+        link="/referencing-values-with-refs/fix-debouncing"
+        pageName="Fix debouncing"
+      />
     </main>
   );
 }
