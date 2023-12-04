@@ -51,6 +51,10 @@ export default function Home() {
         link="/referencing-values-with-refs"
         pageName="Referencing Values with Refs"
       />
+      <PageLink
+        link="/manipulating-the-dom-with-refs"
+        pageName="Manipulating the DOM with Refs"
+      />
     </main>
   );
 }
