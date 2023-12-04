@@ -9,6 +9,10 @@ export default function page() {
         pageName="Manipulating the DOM with Refs"
         link="/manipulating-the-dom-with-refs/play-and-pause-the-video"
       />
+      <PageLink
+        pageName="Focus the search field"
+        link="/manipulating-the-dom-with-refs/focus-the-search-field"
+      />
     </main>
   );
 }
