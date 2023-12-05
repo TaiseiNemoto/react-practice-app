@@ -13,6 +13,10 @@ export default function page() {
         pageName="Focus the search field"
         link="/manipulating-the-dom-with-refs/focus-the-search-field"
       />
+      <PageLink
+        pageName="Scrolling an image carousel"
+        link="/manipulating-the-dom-with-refs/scrolling-an-image-carousel"
+      />
     </main>
   );
 }
