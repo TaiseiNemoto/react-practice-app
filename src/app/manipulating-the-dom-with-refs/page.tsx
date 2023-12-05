@@ -17,6 +17,10 @@ export default function page() {
         pageName="Scrolling an image carousel"
         link="/manipulating-the-dom-with-refs/scrolling-an-image-carousel"
       />
+      <PageLink
+        pageName="Focus the search field with separate components"
+        link="/manipulating-the-dom-with-refs/focus-the-search-field-with-separate-components"
+      />
     </main>
   );
 }
