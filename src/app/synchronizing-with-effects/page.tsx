@@ -9,6 +9,10 @@ export default function Home() {
         link="/synchronizing-with-effects/focus-a-field-on-mount"
         pageName="Focus a field on mount"
       />
+      <PageLink
+        link="/synchronizing-with-effects/fix-an-interval-that-fires-twice"
+        pageName="Fix an interval that fires twice"
+      />
     </main>
   );
 }
