@@ -55,6 +55,10 @@ export default function Home() {
         link="/manipulating-the-dom-with-refs"
         pageName="Manipulating the DOM with Refs"
       />
+      <PageLink
+        link="/synchronizing-with-effects"
+        pageName="Synchronizing with Effects"
+      />
     </main>
   );
 }
