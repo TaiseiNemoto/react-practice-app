@@ -13,6 +13,10 @@ export default function Home() {
         link="/synchronizing-with-effects/fix-an-interval-that-fires-twice"
         pageName="Fix an interval that fires twice"
       />
+      <PageLink
+        link="/synchronizing-with-effects/fix-fetching-inside-an-effect"
+        pageName="Fix fetching inside an Effect"
+      />
     </main>
   );
 }
