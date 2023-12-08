@@ -59,6 +59,10 @@ export default function Home() {
         link="/synchronizing-with-effects"
         pageName="Synchronizing with Effects"
       />
+      <PageLink
+        link="/you-might-not-need-an-effect"
+        pageName="You Might Not Need an Effect"
+      />
     </main>
   );
 }
