@@ -9,10 +9,10 @@ export default function page() {
         pageName="Transform data without Effects"
         link="/you-might-not-need-an-effect/transform-data-without-effects"
       />
-      {/* <PageLink
-        pageName="Find and fix the mutation"
-        link="/you-might-not-need-an-effect/find-and-fix-the-mutation"
-      /> */}
+      <PageLink
+        pageName="Cache a calculation without Effects"
+        link="/you-might-not-need-an-effect/cache-a-calculation-without-effects"
+      />
     </main>
   );
 }
