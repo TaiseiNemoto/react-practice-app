@@ -13,6 +13,10 @@ export default function page() {
         pageName="Cache a calculation without Effects"
         link="/you-might-not-need-an-effect/cache-a-calculation-without-effects"
       />
+      <PageLink
+        pageName="Submit a form without Effects"
+        link="/you-might-not-need-an-effect/submit-a-form-without-effects"
+      />
     </main>
   );
 }
