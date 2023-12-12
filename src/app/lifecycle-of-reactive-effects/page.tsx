@@ -9,6 +9,10 @@ export default function page() {
         pageName="Fix reconnecting on every keystroke"
         link="/lifecycle-of-reactive-effects/fix-reconnecting-on-every-keystroke"
       />
+      <PageLink
+        pageName="Switch synchronization on and off"
+        link="/lifecycle-of-reactive-effects/switch-synchronization-on-and-off"
+      />
     </main>
   );
 }
