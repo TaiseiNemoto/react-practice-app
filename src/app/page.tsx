@@ -63,6 +63,10 @@ export default function Home() {
         link="/you-might-not-need-an-effect"
         pageName="You Might Not Need an Effect"
       />
+      <PageLink
+        link="/lifecycle-of-reactive-effects"
+        pageName="Lifecycle of Reactive Effects"
+      />
     </main>
   );
 }
