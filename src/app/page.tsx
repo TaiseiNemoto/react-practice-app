@@ -67,6 +67,10 @@ export default function Home() {
         link="/lifecycle-of-reactive-effects"
         pageName="Lifecycle of Reactive Effects"
       />
+      <PageLink
+        link="/separating-events-from-effects"
+        pageName="Separating Events from Effects"
+      />
     </main>
   );
 }
