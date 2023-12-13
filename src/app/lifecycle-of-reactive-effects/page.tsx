@@ -13,6 +13,10 @@ export default function page() {
         pageName="Switch synchronization on and off"
         link="/lifecycle-of-reactive-effects/switch-synchronization-on-and-off"
       />
+      <PageLink
+        pageName="Populate a chain of select boxes"
+        link="/lifecycle-of-reactive-effects/populate-a-chain-of-select-boxes"
+      />
     </main>
   );
 }
