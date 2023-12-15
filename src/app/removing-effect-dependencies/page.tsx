@@ -9,6 +9,10 @@ export default function page() {
         link="/removing-effect-dependencies/fix-a-resetting-interval"
         pageName="Fix a resetting interval"
       />
+      <PageLink
+        link="/removing-effect-dependencies/fix-a-reconnecting-chat"
+        pageName="Fix a reconnecting chat"
+      />
     </main>
   );
 }
