@@ -71,6 +71,10 @@ export default function Home() {
         link="/separating-events-from-effects"
         pageName="Separating Events from Effects"
       />
+      <PageLink
+        link="/removing-effect-dependencies"
+        pageName="Removing Effect Dependencies"
+      />
     </main>
   );
 }
