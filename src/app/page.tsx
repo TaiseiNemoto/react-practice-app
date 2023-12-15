@@ -75,6 +75,10 @@ export default function Home() {
         link="/removing-effect-dependencies"
         pageName="Removing Effect Dependencies"
       />
+      <PageLink
+        link="/reusing-logic-with-custom-hooks"
+        pageName="Reusing Logic with Custom Hooks"
+      />
     </main>
   );
 }
