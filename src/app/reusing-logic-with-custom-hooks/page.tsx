@@ -9,6 +9,10 @@ export default function page() {
         link="/reusing-logic-with-custom-hooks/extract-a-usecounter-hook"
         pageName="Extract a useCounter Hook"
       />
+      <PageLink
+        link="/reusing-logic-with-custom-hooks/make-the-counter-delay-configurable"
+        pageName="Make the counter delay configurable"
+      />
     </main>
   );
 }
