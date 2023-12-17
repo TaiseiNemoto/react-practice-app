@@ -17,6 +17,10 @@ export default function page() {
         link="/reusing-logic-with-custom-hooks/extract-useinterval-out-of-usecounter"
         pageName="Extract useInterval out of useCounter"
       />
+      <PageLink
+        link="/reusing-logic-with-custom-hooks/implement-a-staggering-movement"
+        pageName="Implement a staggering movement"
+      />
     </main>
   );
 }
