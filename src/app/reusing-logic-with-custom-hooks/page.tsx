@@ -13,6 +13,10 @@ export default function page() {
         link="/reusing-logic-with-custom-hooks/make-the-counter-delay-configurable"
         pageName="Make the counter delay configurable"
       />
+      <PageLink
+        link="/reusing-logic-with-custom-hooks/extract-useinterval-out-of-usecounter"
+        pageName="Extract useInterval out of useCounter"
+      />
     </main>
   );
 }
